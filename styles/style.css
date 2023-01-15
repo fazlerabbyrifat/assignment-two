@@ -46,7 +46,7 @@ Navbar and heading sections styles
     text-decoration: none;
 }
 
-.heder-content{
+.header-content{
     width: 870px;
     display: flex;
     margin: 30px 450px;
@@ -55,7 +55,7 @@ Navbar and heading sections styles
     
     
 }
-.heder-content h2{
+.header-content h2{
     font-size: 64px;
     font-weight: 700;
     color: #131313;
@@ -88,4 +88,28 @@ Navbar and heading sections styles
     align-items: center;
     margin-left: -70px;
     
+}
+
+
+
+
+
+
+/* ---------------------
+    Responsive section for small devices
+------------------------ */
+@media only screen and (max-width: 576px ) {
+    header, .header-nav, .header-content, .banner{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .header-nav, .nav-items, .header-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-content{
+        align-items: center;
+        gap: 50px;
+    }
 }
